@@ -2,28 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:orientation="vertical">
+
     <EditText
+        android:id="@+id/num1"
+        android:hint="@string/Enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <EditText
+        android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:hint="@string/Enter"
+        />
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="plus"
         android:text="@string/plus" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="minus"
         android:text="@string/minus" />
 
 
