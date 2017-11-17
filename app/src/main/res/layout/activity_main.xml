@@ -17,6 +17,7 @@
         android:hint="@string/Enter"
         />
 
+
     <TextView
         android:id="@+id/out"
         android:layout_width="match_parent"

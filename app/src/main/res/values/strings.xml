@@ -3,4 +3,6 @@
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="Enter">Введите число</string>
+    <string name="division">/</string>
+    <string name="multiplication">*</string>
 </resources>
