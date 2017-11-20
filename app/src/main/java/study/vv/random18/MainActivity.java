@@ -11,20 +11,41 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main5);
     }
-    public void plus(View v){
-        EditText num1 =
-                (EditText) this.findViewById(R.id.num1);
-        String num1text = num1.getText().toString();
-        EditText num2 =
-                (EditText) this.findViewById(R.id.num2);
-        String num2text = num1.getText().toString();
-        TextView out =
-                (TextView) this.findViewById(R.id.out);
-        out.setText(""+(Double.parseDouble(num1text) + Double.parseDouble(num2text)));
+    public void plus(View v) {
+        EditText num1 = (EditText) findViewById(R.id.num1);
+        EditText num2 = (EditText) findViewById(R.id.num2);
+        TextView result = (TextView) findViewById(R.id.out);
+        String snum1 = num1.getText().toString();
+        String snum2 = num2.getText().toString();
+        result.setText(Integer.parseInt(snum1) + Integer.parseInt(snum2) + "");
     }
 
     public void minus(View view) {
+        EditText num1 = (EditText) findViewById(R.id.num1);
+        EditText num2 = (EditText) findViewById(R.id.num2);
+        TextView result = (TextView) findViewById(R.id.out);
+        String snum1 = num1.getText().toString();
+        String snum2 = num2.getText().toString();
+        result.setText(Integer.parseInt(snum1) - Integer.parseInt(snum2) + "");
+    }
+
+    public void multiplication(View view) {
+        EditText num1 = (EditText) findViewById(R.id.num1);
+        EditText num2 = (EditText) findViewById(R.id.num2);
+        TextView result = (TextView) findViewById(R.id.out);
+        String snum1 = num1.getText().toString();
+        String snum2 = num2.getText().toString();
+        result.setText(Integer.parseInt(snum1) * Integer.parseInt(snum2) + "");
+    }
+
+    public void division(View view) {
+        EditText num1 = (EditText) findViewById(R.id.num1);
+        EditText num2 = (EditText) findViewById(R.id.num2);
+        TextView result = (TextView) findViewById(R.id.out);
+        String snum1 = num1.getText().toString();
+        String snum2 = num2.getText().toString();
+        result.setText(Integer.parseInt(snum1) / Integer.parseInt(snum2) + "");
     }
 }
